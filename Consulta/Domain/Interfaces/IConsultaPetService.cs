@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Consulta.Domain.Interfaces
 {
-    public interface IConsultaService
+    public interface IConsultaPetService
     {
         Task<ConsultaPet> GetById(int id);
         Task<List<ConsultaPet>> GetAll();

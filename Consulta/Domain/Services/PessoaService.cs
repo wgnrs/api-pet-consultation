@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Consulta.Domain.Interfaces;
 using Consulta.Domain.Repositories;
 
 namespace Consulta.Domain.Services
 {
-    public class PessoaService
+    public class PessoaService : IPessoaService
     {
        private readonly PessoaRepository _pessoaRepository;
 
