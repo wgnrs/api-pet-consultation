@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace Consulta.Domain.Interfaces
 {
-    public interface IService <T>
+    public interface IService<T>
     {
-        Task<Animal> GetById(int id);
-        Task<List<Animal>> GetAll();
-        Task Create(Animal animal);
-        Task Update(Animal animal);
-        Task Delete(Animal animal);
+        Task<T> GetById(int id);
+        Task<List<T>> GetAll();
+        Task Create(T entity);
+        Task Update(T entity);
+        Task Delete(T entity);
     }
 }

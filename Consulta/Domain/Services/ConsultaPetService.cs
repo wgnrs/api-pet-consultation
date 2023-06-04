@@ -7,7 +7,7 @@ using Consulta.Domain.Repositories;
 
 namespace Consulta.Domain.Services
 {
-    public class ConsultaPetService : IConsultaPetService
+    public class ConsultaPetService : IService<ConsultaPet>
     {
         private readonly ConsultaPetRepository _consultaPetRepository;
 

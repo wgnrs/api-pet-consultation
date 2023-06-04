@@ -2,12 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Consulta.Domain.Interfaces;
 using Consulta.Infra;
 using Microsoft.EntityFrameworkCore;
 
 namespace Consulta.Domain.Repositories
 {
-    public class AnimalRepository
+    public class AnimalRepository : IRepository<Animal>
     {
         private readonly DbContext _context;
 
